@@ -35,7 +35,7 @@ test('should set up remove expense action object', () => {
     expect(action).toEqual({
         type: 'REMOVE_EXPENSE',
         id: '123abc'
-    })
+    });
 });
 
 test('should remove expense from firebase', (done) => {
@@ -65,7 +65,7 @@ test('should set up edit expense action object', () => {
 
 test('should edit an expense in firebase', (done) => {
     const store = createMockStore(defaultAuthState);
-    const id = expenses[2].id;
+    const id = expenses[0].id;
     const updates = { amount: 21045 }
     store.dispatch(startEditExpense(id, updates)).then(() => {
         const actions = store.getActions();
@@ -115,7 +115,7 @@ test('should add expense to database and store', (done) => {
     });
 });
 
-test('should add expense with defaults to database and store', () => {
+test('should add expense with defaults to database and store', (done) => {
     const store = createMockStore(defaultAuthState);
     const expenseDefaults = {
         description: '',
