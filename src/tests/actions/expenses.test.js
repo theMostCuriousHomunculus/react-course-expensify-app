@@ -95,7 +95,7 @@ test('should add expense to database and store', (done) => {
     const expenseData = {
         description: 'tiger',
         amount: 500000,
-        note: 'a goddamn tiger',
+        note: 'a freaking tiger',
         createdAt: 1000
     };
     store.dispatch(startAddExpense(expenseData)).then(() => {

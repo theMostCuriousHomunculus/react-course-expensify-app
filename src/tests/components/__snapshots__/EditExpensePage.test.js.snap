@@ -23,9 +23,9 @@ exports[`should render EditExpensePage correctly 1`] = `
         Object {
           "amount": 100,
           "createdAt": 0,
-          "description": "Cock",
+          "description": "abc",
           "id": "1",
-          "note": "balls",
+          "note": "football",
         }
       }
       onSubmit={[Function]}
